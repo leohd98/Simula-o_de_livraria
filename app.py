@@ -2,11 +2,17 @@ from modulos.manga import Manga
 
 
 def finaliza_app():
+
+    ''' Limpa o terminal e imprime a mensagem de fim do programa, e finaliza o programa. '''
+    
     print('\n'*80)
     print('FIM DO PROGRAMA')
 
 
 def retira():
+
+    ''' Exclui do arquivo.txt um mangá que o usuário quiser retirar. '''
+    
     print()
     Manga.imprimir_estoque()
     print()
@@ -20,6 +26,9 @@ def retira():
 
 
 def procura():
+
+    ''' Procura e imprime os mangás contidos no arquivo.txt que batem com os elementos de pesquisa. '''
+    
     titulo = input('Digite o título do mangá: ')
     autor = input('Digite o autor do mangá: ')
     volume = input('Digite o volume do mangá: ')
@@ -27,6 +36,9 @@ def procura():
 
 
 def lista_estoque():
+
+    ''' Lista todos os mangás contidos no arquivo.txt que simula um banco de dados '''
+    
     print()
     Manga.imprimir_estoque()
     print()
@@ -36,7 +48,7 @@ def lista_estoque():
 
 def adiciona():
 
-    ''' Adiciona um novo mangá num banco de dados '''
+    ''' Adiciona um novo mangá num arquivo.txt que simula um banco de dados '''
 
     print()
     titulo = input('Digite o título do mangá: ')
@@ -92,6 +104,7 @@ def menu():
 def main():
 
     ''' Define a ordem principal do funcionamento do programa e suas funções '''
+    
     print(f'\n' * 80)
     menu()
     escolhe_opcao()
