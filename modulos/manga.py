@@ -48,6 +48,10 @@ class Manga:
 
     @classmethod
     def procura_manga(cls, titulo, autor, volume):
+
+        ''' Localiza linhas Específicas no arquivo estoque.txt usando como pesquisa título, autor e volume 
+        ( funciona mais ou menos pois é um arquivo.txt, não é uma file ideal para esse tipo de pesquisa, então os resultados não são tão precisos ) '''
+        
         encontrado = False
         with open('estoque.txt', 'r') as arquivo:
             for linha in arquivo:
@@ -61,6 +65,9 @@ class Manga:
 
     @classmethod
     def retira_manga(cls, titulo, volume):
+
+        ''' Retira uma determinada linha do arquivo estoque.txt que tenha o título e o volume escolhidos '''
+        
         encontrado = False
         linhas_modificadas = []
 
