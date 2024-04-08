@@ -1,0 +1,2 @@
+| Título: Dragon Ball | Autor: Exemplo    | Volume: 1          | Preço: 20.00
+| Título: Naruto     | Autor: Exemplo2   | Volume: 4          | Preço: 15.00
